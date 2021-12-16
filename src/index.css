@@ -45,3 +45,30 @@ code {
   font-size: calc(10px + 2vmin);
   color: black;
 }
+
+/* Authorization */
+
+input {
+  border: 2px solid rgb(161, 163, 163);
+  border-radius: 3px;
+  width: 500px;
+  height: 80px;
+  color: rgb(121, 118, 118);
+  font-size: 56px;
+  text-align: start;
+
+  padding-left: 15px;
+}
+
+button {
+  width: 240px;
+  border: 2px solid rgb(161, 163, 163);
+  border-radius: 3px;
+  height: 80px;
+  background-color: #ebeff5;
+  color: black;
+  font-size: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
