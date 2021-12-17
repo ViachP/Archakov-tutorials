@@ -1,14 +1,13 @@
 const Authorization = () => {
   let email = "";
   let password = "";
-  let input = document.getElementsByTagName("input");
 
   function onChangeInput(event) {
-    const id = event.target.id;
-    if (id === "email") {
+    const name = event.target.name;
+    if (name === "email") {
       email = event.target.value;
     }
-    if (id === "password") {
+    if (name === "password") {
       password = event.target.value;
     }
   }
@@ -27,7 +26,7 @@ const Authorization = () => {
     <form onSubmit={handleSubmit}>
       <input
         onChange={onChangeInput}
-        id="email"
+        name="email"
         type="text"
         placeholder="E-Mail"
       />
@@ -35,7 +34,7 @@ const Authorization = () => {
       <br />
       <input
         onChange={onChangeInput}
-        id="password"
+        name="password"
         type="password"
         placeholder="Пароль"
       />
